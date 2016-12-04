@@ -8,6 +8,7 @@ public class App
 {
     public static void main( String[] args )
     {
-    	System.out.println("Hola mundo");
+    	DistanciaLevenshtein a = new DistanciaLevenshtein();
+    	System.out.println(a.calcularDistanciaLevenshtein("hola", "casa"));
     }
 }
