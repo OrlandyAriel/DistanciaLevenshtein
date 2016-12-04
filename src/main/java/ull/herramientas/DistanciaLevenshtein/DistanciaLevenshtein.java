@@ -12,10 +12,10 @@ public class DistanciaLevenshtein
 {
 	/**
 	 * \brief método que calcula el minimo de los 3 valores pasados por parámetro
-	 * @param a
-	 * @param b
-	 * @param c
-	 * @return devuelve el valor mínimio de entre los 3 parámetros
+	 * \param a
+	 * \param b
+	 * \param c
+	 * \return devuelve el valor mínimio de entre los 3 parámetros
 	 */
 	private  int minima(int a, int b, int c) {
         if(a<=b && a<=c)
@@ -30,9 +30,9 @@ public class DistanciaLevenshtein
     }
 	/**
 	 * \brief Método que recibe 2 cadenas
-	 * @param cadena1
-	 * @param cadena2
-	 * @return, retorna la distancia entre una cadena y otra.
+	 * \param cadena1
+	 * \param cadena2
+	 * \return, retorna la distancia entre una cadena y otra.
 	 */
     public  int calcularDistanciaLevenshtein(String cadena1, String cadena2) {
     	if(cadena1.isEmpty() && cadena2.isEmpty())
@@ -44,9 +44,9 @@ public class DistanciaLevenshtein
     /**
      * \brief Método interno que se encarga de realizar las operaciones 
      * para calcular la distancia
-     * @param str1
-     * @param str2
-     * @return, devuelve la distancia entre una cadena y la otra
+     * \param str1
+     * \param str2
+     * \return, devuelve la distancia entre una cadena y la otra
      */
     private  int calcularDistanciaLevenshtein(char [] str1, char [] str2) {
         int [][]distance = new int[str1.length+1][str2.length+1];

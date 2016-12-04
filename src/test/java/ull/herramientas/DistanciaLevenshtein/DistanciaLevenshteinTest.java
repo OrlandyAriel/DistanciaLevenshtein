@@ -4,16 +4,25 @@ import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
-
+/**
+ * \class DistanciaLevenshteinTest
+ * \author Orlandy Ariel Sánchez A.
+ * \brief Test de pruebas para la clase DistanciaLevenshtein
+ */
 public class DistanciaLevenshteinTest
 {
 	private DistanciaLevenshtein m_distancia1;
-	
+	/**
+	 * \brief crea el objeto
+	 */
 	@Before
 	public void config()
 	{
 		m_distancia1 = new DistanciaLevenshtein();
 	}
+	/**
+	 * \brief test que prueba el funcionamiento normal.
+	 */
 	@Test
 	public void pruebaFuncionamientoNormal()
 	{
@@ -23,6 +32,9 @@ public class DistanciaLevenshteinTest
 		assertEquals(t_dis1, t_dis2);
 		assertEquals(t_dis1, t_dis3);
 	}
+	/**
+	 * \brief test para probar que se lanza la excepticion al introducir dos cadenas vacias
+	 */
 	@Test
 	public void pruebaMalFuncionamiento()
 	{
